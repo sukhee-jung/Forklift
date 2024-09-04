@@ -6,7 +6,7 @@ from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
 from kurly import clusters
 
-import weather
+import notice
 
 # 환경 변수에서 Slack 토큰, 채널을 로드
 load_dotenv()
