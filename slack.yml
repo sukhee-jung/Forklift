@@ -26,5 +26,4 @@ jobs:
         env:
           SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
           SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
-          SERVICE_KEY: ${{ secrets.SERVICE_KEY }}
         run: python3 main.py
