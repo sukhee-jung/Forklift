@@ -13,7 +13,7 @@ SLACK_TOKEN = os.environ.get("SLACK_TOKEN")
 
 def send_slack_message(message, channel):
     try:
-        client = WebClient(token=SLACK_TOKEN
+        client = WebClient(token=SLACK_TOKEN)
         client.chat_postMessage(channel=channel, text=message)
     except SlackApiError as e:
         print(f"Error sending message to {channel} : {e}")
